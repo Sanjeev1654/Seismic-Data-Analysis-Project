@@ -1,38 +1,41 @@
-🌍 Spectral Acceleration Prediction with Bayesian Neural Network (SDA.py)
- General Idea of the Project
+# generate_readme_sda.py
 
-Implements a Bayesian Neural Network (BNN) using PyTorch to predict Spectral Acceleration (SA) values.
+readme_content = """
+# Seismic Data Analysis(SDA) using Bayesian Neural Network 
 
-Input earthquake parameters include:
-Earthquake Magnitude (Mw)
-Joyner–Boore distance (Rjb, km) and its logarithm
-Shear-wave velocity (Vs30, m/s) and its logarithm
-Intra-event vs. Inter-event flag
-Hypocenter depth (km)
-Target outputs are Spectral Acceleration (SA) values at multiple periods (e.g., 0.01s, 0.02s, … 4.0s).
+This project is a **Bayesian Neural Network toolkit** that provides functions for descriptive statistics, hypothesis testing, correlation analysis, and time-series modeling.  
+It is designed for researchers, analysts, and students who want to quickly explore and analyze datasets.
 
-Key features:
-Custom Bayesian Linear Layers for uncertainty-aware predictions
-Negative Log Likelihood Loss (NLL Loss) for probabilistic training
-Training, validation, and testing pipeline with scaling and stratified splitting
-Uncertainty quantification (Epistemic and Aleatory uncertainty)
-Sensitivity analysis plots:
-SA vs. period for varying magnitudes
-SA vs. period for varying distances (Rjb)
-SA vs. period for varying site conditions (Vs30)
+---
 
-⚙️ Requirements
+## 📌 Project Overview
+- Computes **descriptive statistics** (mean, median, variance, skewness, kurtosis).  
+- Plots **distributions** and density estimates.  
+- Generates **correlation matrices** and heatmaps.  
+- Performs **hypothesis testing** (t-tests, chi-square).  
+- Provides **time-series analysis** using ARIMA, ACF, and PACF.  
+- A lightweight and modular toolkit for **data exploration and risk analysis**.  
 
-Programming Language: Python 3.8+
+---
 
-Libraries & Frameworks:
+## 📊 Statistical Concepts Used
+- **Descriptive Statistics** – summary measures of central tendency and dispersion.  
+- **Correlation Analysis** – identifies relationships between variables.  
+- **Hypothesis Testing** – statistical inference using t-tests and chi-square tests.  
+- **Time-Series Analysis** – ARIMA modeling, autocorrelation, and trend detection.  
+- **Visualization** – histograms, density plots, and heatmaps for better insights.  
 
-numpy (numerical computing)
+---
 
-pandas (data handling)
+## 🛠️ Requirements
+This project is written in **Python 3** and uses the following libraries:
 
-matplotlib (visualization)
+- **NumPy** – Numerical computations  
+- **Pandas** – Data handling  
+- **Matplotlib** – Plotting  
+- **Seaborn** – Statistical visualizations  
+- **Statsmodels** – Statistical and time-series modeling  
 
-scikit-learn (scaling, train/test split, metrics)
+---
 
 torch (PyTorch – deep learning framework)
