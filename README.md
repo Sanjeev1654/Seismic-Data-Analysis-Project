@@ -34,5 +34,3 @@ This project is written in **Python 3** and uses the following libraries:
 - **Statsmodels** – Statistical and time-series modeling  
 
 ---
-
-torch (PyTorch – deep learning framework)
