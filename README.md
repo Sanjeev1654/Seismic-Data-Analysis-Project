@@ -1,6 +1,3 @@
-# generate_readme_sda.py
-
-readme_content = """
 # Seismic Data Analysis(SDA) using Bayesian Neural Network 
 
 This project is a **Bayesian Neural Network toolkit** that provides functions for descriptive statistics, hypothesis testing, correlation analysis, and time-series modeling.  
